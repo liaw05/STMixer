@@ -1,0 +1,15 @@
+*.swp
+**/__pycache__/**
+imnet_resnet50_scratch/timm_temp/
+.dumbo.json
+checkpoints/
+*/*.json
+*.pyc
+*/*.pyc
+*/*/*.pyc
+*/*/*/*.pyc
+.vscode/*
+output/*/*
+output/*/*/*
+*/*.pth
+*/*/*.pth
