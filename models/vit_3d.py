@@ -16,7 +16,6 @@ import numpy as np
 # from timm.models.vision_transformer import VisionTransformer
 from timm.models.layers.helpers import to_3tuple
 from timm.models.layers import PatchEmbed
-from timm.models.layers import trunc_normal_
 from models.layers.vision_transformer import VisionTransformer
 
 
@@ -29,9 +28,6 @@ class VisionTransformerND(VisionTransformer):
                 self.build_3d_sincos_position_embedding()
             else:
                 self.build_2d_sincos_position_embedding()
-
-        self.prefeat_token = nn.Parameter(torch.zeros(1, 1, self.embed_dim))
-        trunc_normal_(self.prefeat_token, std=.02)
 
         # weight initialization
         for name, m in self.named_modules():

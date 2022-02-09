@@ -272,8 +272,8 @@ def main_worker(gpu, ngpus_per_node, args):
     criterion = HierarchicalClass(device)
 
     output_dir = Path(args.output_dir)
-    # if args.resume:
-    if True:
+    if args.resume:
+    # if True:
         print("=> loading checkpoint '{}'".format(args.checkpoint_path))
         if args.checkpoint_path.startswith('https'):
             checkpoint = torch.hub.load_state_dict_from_url(

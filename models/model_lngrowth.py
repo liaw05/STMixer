@@ -11,6 +11,7 @@ from functools import partial, reduce
 from operator import mul
 import torch.nn.functional as F
 import numpy as np
+from timm.models.layers import trunc_normal_
 from models.vit_3d import VisionTransformerND, ConvStem3D
 from models.layers.stmixer import STMixer
 
@@ -27,6 +28,9 @@ class LNGrowthNet(nn.Module):
             num_classes=args.nb_classes, drop_rate=args.drop, drop_path_rate=args.drop_path)
 
         self.num_features = self.backbone.embed_dim
+        self.prefeat_token = nn.Parameter(torch.zeros(1, 1, self.num_features))
+        trunc_normal_(self.prefeat_token, std=.02)
+
         norm_layer = partial(nn.LayerNorm, eps=1e-6)
         act_layer = nn.GELU
         self.fuze_block = STMixer(
@@ -42,10 +46,10 @@ class LNGrowthNet(nn.Module):
         batch_size = x1.size(0)
         prefeat_tokens = self.prefeat_token.expand(batch_size, -1, -1).clone()
         if mask.sum():  # previous, T-1 ct
-            _, x01 = self.forward_features(x0[mask>0])
+            _, x01 = self.backbone(x0[mask>0])
             prefeat_tokens[mask>0] = x01[:, None]
         else:
-            _, x01 = self.forward_features(x0)
+            _, x01 = self.backbone(x0)
             prefeat_tokens = x01*0 + prefeat_tokens
 
         x = torch.cat([x11[:,None], x10[:,None], prefeat_tokens], dim=1)
