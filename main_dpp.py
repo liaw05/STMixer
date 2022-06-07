@@ -35,7 +35,7 @@ from losses.classification_loss import HierarchicalClass
 def get_args_parser():
     parser = argparse.ArgumentParser('DeiT training and evaluation script', add_help=False)
     parser.add_argument('--batch-size', default=2, type=int)
-    parser.add_argument('--epochs', default=100, type=int)
+    parser.add_argument('--epochs', default=60, type=int)
 
     # Model parameters
     parser.add_argument('--model', default='vit_stm_patch8_72', type=str, metavar='MODEL',
