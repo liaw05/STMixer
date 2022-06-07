@@ -33,6 +33,8 @@ Run
   The pipeline of organizing the temporal CT dataset (NLSTt), including CT scan registration, ROI pairing, and class annotation. The letter d denotes the diameter of lung nodules, and c indicates their corresponding texture types, i.e., solid, part-solid (PS), ground-glass nodule (GGN).
 </p>
 
+The paired nodules from NLST is listed in './data/data.csv' (NLSTt), and please download raw CT scans from [NLST](https://wiki.cancerimagingarchive.net/display/NLST/National+Lung+Screening+Trial)
+
 ### Statistics of benchmark splits of the NLSTt dataset and in-house dataset.
 | Types | Train set | Validation set | Test set | In-house set |
 | ----- |  :----:   | :----:         |:----:    |:----:        |
