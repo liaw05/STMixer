@@ -67,7 +67,7 @@ ViT |STM (Ours) |83.6 |77.5 | 72.8 | 78.5 |
 | Clinician A| 85.3    | 93.2      |60.5   |
 | Clinician B| 86.0    | 94.0      |62.8   |
 
-## Examples of predicting
+## Examples of predicting the growth trend by our model.
 <div align="center">
   <img width="400", src="./rscs/predicting examples.JPG">
 </div>
