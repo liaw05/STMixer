@@ -1,7 +1,7 @@
 # TS-Mixer
 
 ## Introduction
-This repository is an implementation of the paper '[Siamese Encoder-based Spatial-Temporal Mixer for Growth Trend Prediction of Lung Nodules on CT Scans](http://xxxxx.pdf)', accepted by MICCAI2022, and is built upon [DeiT](https://github.com/facebookresearch/deit), thanks very much!
+This repository is an implementation of the paper '[Siamese Encoder-based Spatial-Temporal Mixer for Growth Trend Prediction of Lung Nodules on CT Scans](http://xxxxx.pdf)', accepted by MICCAI2022, and is built upon [DeiT](https://github.com/facebookresearch/deit), thank them very much!
 
 <div align="center">
   <img width="400", src="./rscs/net.JPG">
