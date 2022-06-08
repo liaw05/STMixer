@@ -1,7 +1,7 @@
 # TS-Mixer
 
 ## Introduction
-This repository is an implementation of the paper '[Siamese Encoder-based Spatial-Temporal Mixer for Growth Trend Prediction of Lung Nodules on CT Scans](http://xxxxx.pdf)', accepted by MICCAI2022, and is built upon [DeiT](https://github.com/facebookresearch/deit), thank them very much!
+This repository is an implementation of the paper '[Siamese Encoder-based Spatial-Temporal Mixer for Growth Trend Prediction of Lung Nodules on CT Scans](https://arxiv.org/pdf/2206.03049.pdf)', accepted by MICCAI2022, and is built upon [DeiT](https://github.com/facebookresearch/deit), thank them very much!
 
 <div align="center">
   <img width="400", src="./rscs/net.JPG">
@@ -85,5 +85,14 @@ This repository is released under the Apache 2.0 license as found in the [LICENS
 Please cite TS-Mixer in your publications if it helps your research. 
 
 ```
-
+@misc{https://doi.org/10.48550/arxiv.2206.03049,
+  doi = {10.48550/ARXIV.2206.03049},
+  url = {https://arxiv.org/abs/2206.03049},
+  author = {Fang, Jiansheng and Wang, Jingwen and Li, Anwei and Yan, Yuguang and Hou, Yonghe and Song, Chao and Liu, Hongbo and Liu, Jiang},
+  keywords = {Image and Video Processing (eess.IV), Computer Vision and Pattern Recognition (cs.CV), FOS: Electrical engineering, electronic engineering, information engineering, FOS: Electrical engineering, electronic engineering, information engineering, FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Siamese Encoder-based Spatial-Temporal Mixer for Growth Trend Prediction of Lung Nodules on CT Scans}, 
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
 ```
