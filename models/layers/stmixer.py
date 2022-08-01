@@ -1,5 +1,4 @@
 """ Spatial and Temporal feature Mixer
-A PyTorch implement by Anwei Li
 """
 import torch
 import torch.nn as nn
