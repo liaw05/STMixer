@@ -48,10 +48,8 @@ class LnGrowthDataset(torch.utils.data.Dataset):
         if self.train:
             csv_path = "/data/Metrics/nodulegrowth/growthlabel_csv/growth_nodule_train0208.csv"
         else:     
-            csv_path = "/data/Metrics/nodulegrowth/growthlabel_csv/growth_nodule_valtest0208.csv"
-            # csv_path = "/data/Metrics/nodulegrowth/growthlabel_csv/growth_nodule_val0208.csv"
+            csv_path = "/data/Metrics/nodulegrowth/growthlabel_csv/growth_nodule_val0208.csv"
             # csv_path = "/data/Metrics/nodulegrowth/growthlabel_csv/growth_nodule_test0208.csv"
-            # csv_path = "/data/Metrics/nodulegrowth/growthlabel_csv/cvte_test.csv"
 
         df = pd.read_csv(csv_path)
         self.ids, self.labels = df['id'].values, df['Seg_label'].values
