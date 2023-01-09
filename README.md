@@ -43,6 +43,8 @@ The paired nodules from NLST is listed in './data/data.csv' (NLSTt), and please 
 | PS    | 148       |    26          |37        |6             |
 | Total | 6,952     |    1,490       |1,587     |487           |
 
+### Note
+Unfortunately, we saved and used coordinates of nouldes after the regisration in the Paper, which is inconvenient to sharing coordinates. So we will release the original coordinates step by step in 'data/original coordinates'.
 
 ## Results
 ### AUC (in %) of different mixers and encoders on the test and in-house sets.
