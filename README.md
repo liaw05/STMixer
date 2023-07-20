@@ -4,7 +4,7 @@ The repository of [GM-AE](https://github.com/liaw05/GM-AE) is an implementation 
 Nodules used for [GM-AE](https://github.com/liaw05/GM-AE) is listed in 'data/original coordinates/dataset_part_2301.csv'
 
 <div align="center">
-  <img width="400", src="./rscs/morphological_autoencoder.JPG">
+  <img width="400", src="./rscs/morphological_autoencoder.png">
 </div>
 <p align="center">
   Architecture of morphological autoencoder equipped with shape-aware (DS) and texture-aware (DN ) decoders.
