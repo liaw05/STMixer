@@ -1,6 +1,6 @@
 # GM-AE
 
-The repository of [GM-AE](https://github.com/liaw05/GM-AE) is an implementation of the paper '[Parameterized Gompertz-guided Morphological AutoEncoder for Predicting Pulmonary Nodule Growth]()', accepted by TMI.
+The repository of [GM-AE](https://github.com/liaw05/GM-AE) is an implementation of the paper '[Parameterized Gompertz-guided Morphological AutoEncoder for Predicting Pulmonary Nodule Growth](https://ieeexplore.ieee.org/document/10189348)', accepted by TMI.
 Nodules used for [GM-AE](https://github.com/liaw05/GM-AE) is listed in 'data/original coordinates/dataset_part_2301.csv'
 
 <div align="center">
